@@ -1,20 +1,159 @@
 <!DOCTYPE html>
-<div style="
-    height: 100%;
-    overflow: scroll;
-">
-    <section style="
-        /* Take full size */
-        height: 100%;
-        width: 100%;
+<!-- Sidebar layout-->
+<div style="display: flex;">
+    <!-- Sidebar -->
+    <aside style="width: 30%;">
+        ...
+    </aside>
 
-        /* Stick to the top */
-        position: sticky;
-        top: 0;
+    <!-- Main -->
+    <main style="
+        /* Take the remaining width */
+        flex: 1;
+
+        /* Make it scrollable */
+        overflow: auto;
     ">
         ...
-    </section>
+    </main>
+</div>
 
-    <!-- Repeat other sections -->
-    ...
+<!--Fading Long Section-->
+<div style="
+    /* Used to position the faded element */
+    position: relative;
+">
+    <!-- Main content -->
+    <div style="
+        /* Height */
+        height: 200px;
+
+        /* Scrollable */
+        overflow-y: scroll;
+    ">
+        ...
+    </div>
+
+    <!-- The faded element -->
+    <div style="
+        /* Displayed at the bottom */
+        bottom: 0;
+        left: 0;
+        position: absolute;
+
+        /* Size */
+        height: 30px;
+        width: 100%;
+
+        /* Gradient background */
+        background: linear-gradient(rgba(255, 255, 255, 0.01), #fff);
+    " />
+</div>
+
+<!-- Picture Dot navigation -->
+
+<ul style="
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+">
+    <li style="
+        /* Rounded border */
+        border-radius: 9999px;
+        height: 12px;
+        width: 12px;
+
+        /* Active dot */
+        background-color: rgba(0, 0, 0, .3);
+
+        /* Inactive dot */
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, .3);
+
+        /* OPTIONAL: Spacing between dots */
+        margin: 0 4px;
+    " />
+</div>
+
+<!-- Prev and Next buttons -->
+<
+>
+<div style="
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+">
+    <!-- Previous link sticks to the left -->
+    <a>..</a>
+
+    <!-- Next link sticks to the right -->
+    <a>..</a>
+</div>
+
+<!--Separator-->
+<div style="
+    /* Content is centered horizontally */
+    align-items: center;
+    display: flex;
+
+    /* Used to set the position of text */
+    position: relative;
+">
+    <!-- Text -->
+    <div style="
+        /* We won't see the separator line */
+        background: #FFF;
+
+        /* Displayed at the center of container */
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    ">
+        ...
+    </div>
+
+    <!-- Separator line -->
+    <div style="
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        height: 1px;
+        width: 100%;
+    " />
+</div>
+
+<!--Initial Avatar-->
+PN
+<div style="
+    /* Center the content */
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Used to position the content */
+    position: relative;
+
+    /* Colors */
+    background-color: rgba(0, 0, 0, .3);
+    color: #FFF;
+
+    /* Rounded border */
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+">
+    <div style="
+        /* Center the content */
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    ">
+        <!-- The letters -->
+        ...
+    </div>
 </div>
